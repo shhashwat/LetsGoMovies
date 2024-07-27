@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto,sans-serif;
+
+    &::-webkit-scrollbar{
+        display: none;
+        scrollbar-width: none;
+    }
+}
+
+a,h2{
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+$bg-color: rgb(16,16,16);
+
+.logoNet{
+    height: 40px;
+}
+
+.header{
+    height: 14.41vh;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    >div{
+        width: 100%;
+        margin-left: 4vmax;
+
+
+        > a {
+            margin: 2vmax;
+            font-size: 1.3rem;
+            font-weight: 300;
+            padding: 2px;
+        }
+    }
+
+    >svg{
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(181, 181, 181);
+        }
+    }
+
+}

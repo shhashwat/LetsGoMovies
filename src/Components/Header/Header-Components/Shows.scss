@@ -1,0 +1,39 @@
+.tv-row {
+    height: 235vh;
+    height: 235dvh;
+    display: grid;
+    grid-template-columns: repeat(6,  1fr);
+    grid-gap:  20px;
+    padding:  20px;
+    background-color: black;
+
+    @media screen and (max-width:  768px) {
+      height:  150vh; 
+    }
+  
+    @media screen and (max-width:  480px) {
+      height:  100vh;
+    }
+    
+    .tv-card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .tv-card {
+        width:  100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom:  10px;
+      }
+  
+      h3 {
+        font-weight: 300;
+        margin:  0;
+        font-size:  16px;
+        color: #fffafa;
+      }
+    }
+  }
+  
